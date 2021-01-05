@@ -1,0 +1,89 @@
+$SVN-Gotham-Black: "SVN-Gotham-Black";
+$SVN-Gotham-Bold: "SVN-Gotham-Bold";
+$SVN-Gotham-Italic: "SVN-Gotham-Italic";
+$SVN-Gotham-Light: "SVN-Gotham-Light";
+$SVN-Gotham-Regular: "SVN-Gotham";
+$SVN-Gotham-Book: "SVN-Gotham-Book";
+
+$UTMGod_sWordBold: "UTMGod_sWordBold";
+$UTMGod_sWordR: "UTMGod_sWordR";
+
+///=====================================================================================================
+
+// SVN-Gotham
+@font-face {
+    font-family: "SVN-Gotham-Black";
+    src: url("../assets/fonts/SVN-Gotham-Black/SVN-Gotham-Black.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/SVN-Gotham-Black/SVN-Gotham-Black.otf") format("opentype"),
+        url("../assets/fonts/SVN-Gotham-Black/SVN-Gotham-Black.woff") format("woff"),
+        url("../assets/fonts/SVN-Gotham-Black/SVN-Gotham-Black.ttf") format("truetype"),
+        url("../assets/fonts/SVN-Gotham-Black/SVN-Gotham-Black.svg#SVN-Gotham-Black") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SVN-Gotham-Bold";
+    src: url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.woff") format("woff"),
+        url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.ttf") format("truetype"),
+        url("../assets/fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.svg#SVN-Gotham-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham-Book';
+    src:
+        url('../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.eot') format('embedded-opentype'),
+        url('../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf') format('opentype'),
+        url('../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.woff') format('woff'),
+        url('../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.ttf') format('truetype'),
+        url('../assets/fonts/SVN-Gotham-Book/SVN-Gotham-Book.svg#SVN-Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham-Light';
+    src: url('../assets/fonts/SVN-Gotham-Light/SVN-Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SVN-Gotham-Light/SVN-Gotham-Light.woff') format('woff'),
+        url('../assets/fonts/SVN-Gotham-Light/SVN-Gotham-Light.ttf') format('truetype'),
+        url('../assets/fonts/SVN-Gotham-Light/SVN-Gotham-Light.svg#SVN-Gotham-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-Gotham/SVN-Gotham.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SVN-Gotham/SVN-Gotham.otf') format('opentype'),
+        url('../assets/fonts/SVN-Gotham/SVN-Gotham.woff') format('woff'),
+        url('../assets/fonts/SVN-Gotham/SVN-Gotham.ttf') format('truetype'),
+        url('../assets/fonts/SVN-Gotham/SVN-Gotham.svg#SVN-Gotham') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// UTMGod_sWord
+@font-face {
+    font-family: 'UTMGod_sWordBold';
+    src: url('../assets/fonts/UTMGod_sWordBold/UTMGod_sWordBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/UTMGod_sWordBold/UTMGod_sWordBold.woff') format('woff'),
+        url('../assets/fonts/UTMGod_sWordBold/UTMGod_sWordBold.woff2') format('woff2'),
+        url('../assets/fonts/UTMGod_sWordBold/UTMGod_sWordBold.ttf') format('truetype'),
+        url('../assets/fonts/UTMGod_sWordBold/UTMGod_sWordBold.svg#UTMGod_sWordBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMGod_sWordR';
+    src: url('../assets/fonts/UTMGod_sWordR/UTMGod_sWordR.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/UTMGod_sWordR/UTMGod_sWordR.woff') format('woff'),
+        url('../assets/fonts/UTMGod_sWordR/UTMGod_sWordR.woff2') format('woff2'),
+        url('../assets/fonts/UTMGod_sWordR/UTMGod_sWordR.ttf') format('truetype'),
+        url('../assets/fonts/UTMGod_sWordR/UTMGod_sWordR.svg#UTMGod_sWordR') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
