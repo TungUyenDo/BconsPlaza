@@ -13,10 +13,10 @@ var MainScript = (function () {
     var _init = function () {
         self.PopupValidateForm();
         self.Block1ValidateForm();
-        self.Block5ValidateForm();
+        self.Block6ValidateForm();
         self.Block2Slider();
         self.Block8Slider();
-        self.Block6Slider();
+        self.Block5Slider();
         self.Menu();
         self.OpenMenu();
     }
@@ -24,7 +24,7 @@ var MainScript = (function () {
 
     this.PopupValidateForm = function () {
         $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
-            $(".block6__slider").slick("resize");
+            $(".block5__slider").slick("resize");
         })
     }
 
@@ -68,20 +68,20 @@ var MainScript = (function () {
         validateForm($submit, form);
     }
 
-    this.Block5ValidateForm = function () {
+    this.Block6ValidateForm = function () {
         var form = [{
-            name: '.block5Name',
+            name: '.block6Name',
             validators: ['required'],
         }, {
-            name: '.block5Phone',
+            name: '.block6Phone',
             validators: ['required', 'isNumber', 'minLength', 'maxLength'],
             minLength: 10,
             maxLength: 10,
         }, {
-            name: '.block5Email',
+            name: '.block6Email',
             validators: ['required']
         }];
-        var $submit = '.block5__button button';
+        var $submit = '.block6__button button';
         validateForm($submit, form);
     }
 
@@ -138,12 +138,12 @@ var MainScript = (function () {
         });
     }
 
-    this.Block6Slider = function () {
-        if ($(".block6__slider").length === 0) {
+    this.Block5Slider = function () {
+        if ($(".block5__slider").length === 0) {
             return false
         }
 
-        $(".block6__slider").slick({
+        $(".block5__slider").slick({
             arrows: false,
             dots: true,
             autoplay: true,

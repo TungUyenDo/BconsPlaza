@@ -1,6 +1,6 @@
 .block1 {
     position: relative;
-    height: 56.25vw;
+    height: 56.250vw;
     width: 100%;
     background: url("../assets/images/block1_bg.jpg");
     background-size: 100% 100%;
@@ -18,7 +18,7 @@
         // top: 100px;
         // max-width: 610px;
         left: 7.292vw;
-        top: 3.208vw;
+        top: 14.063vw;
         width: 31.771vw;
 
         @media (max-width: 767px) {
@@ -32,12 +32,8 @@
     }
 
     &__heading {
-        width: 24.125vw;
+        width: 9.375vw;
         margin: 0 auto;
-
-        @media (max-width: 767px) {
-            width: 55vw;
-        }
     }
 
     &__title {
@@ -91,13 +87,12 @@
 }
 
 .block_intro {
-    height: 38.906vw;
+    height: 28.115vw;
     position: relative;
     width: 100%;
-    background: url("../assets/images/bg_2.jpg");
+    background: url("../assets/images/block2_bg.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-bottom: -1vw;
 
     @media (max-width: 767px) {
         height: 67.865vw;
@@ -107,49 +102,18 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        text-align: center;
-        width: 100%;
+        width: 56.771vw;
         @include transform(translate(-50%, -50%));
-    }
-
-    .text {
-        color: #e1eaf3;
-        // font-size: 42px;
-        font-size: 2.188vw;
-        max-width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-
-        @media (max-width: 767px) {
-            font-size: 4vw;
-        }
-
-        p {
-            margin: 0;
-        }
-
-
-    }
-
-    .btn-arrow {
-        // margin-top: 10px;
-        margin-top: 0.521vw;
-
-        @media (max-width: 767px) {
-            font-size: 4.7vw;
-            margin-top: 3vw;
-        }
     }
 }
 
 .block2 {
     font-size: 1.25vw;
-    padding-top: 3.125vw;
-    padding-bottom: 4.208vw;
     position: relative;
     width: 100%;
-    background: url("../assets/images/bg_3.jpg");
+    background: url("../assets/images/block3_bg.jpg");
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: #e1eaf3;
     font-family: $SVN-Gotham-Book;
 
@@ -170,6 +134,7 @@
         @include justify-content(space-between);
         // margin-top: 40px;
         margin-top: 2.083vw;
+        color: #000;
 
         @media (max-width: 767px) {
             @include flex-direction(column);
@@ -265,78 +230,37 @@
                 }
             }
         }
-    }
 
-    &__slider {
-        margin: 0 auto;
-        // width: calc(100% - 300px);
-        // margin-top: 55px;
-        width: calc(100% - 15.625vw);
-        margin-top: 2.865vw;
+        .time_distance {
+            @include flexbox;
 
-        @media (max-width: 767px) {
-            width: 80vw;
-        }
+            &__item {
+                text-align: center;
+            }
 
-        .item {
-            position: relative;
-        }
+            &__number {
+                @include flexbox;
+                @include flex-direction(column);
+                border-radius: 50%;
+                background-color: #FFC313;
+                width: 95px;
+                height: 95px;
+                color: #152c3a;
+                font-family: $SVN-Gotham-Bold;
+            }
 
-        .text {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            color: #fff;
-            background-color: #4e555b;
-            // padding: 9px 20px;
-            padding: 0.469vw 1.042vw;
+            .number {
+                font-size: 40px;
+            }
 
-            @media (max-width: 767px) {
-                width: 80vw;
-                padding: 1vw 4vw;
-                font-size: 2vw;
+            .text {
+                font-size: 16px;
+            }
+
+            .value {
+                font-size: 14px;
             }
         }
-
-        .slick-arrow {
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 5.7vw;
-            height: 5.7vw;
-            z-index: 1;
-
-            &::before {
-                display: none;
-            }
-        }
-
-        .slick-prev {
-            // left: -80px;
-            left: -4.167vw;
-            background-image: url("../assets/images/arrow_white_left.png");
-
-            &:hover {
-                background-image: url("../assets/images/arrow_yellow_left.png");
-            }
-        }
-
-        .slick-next {
-            // right: -80px;
-            right: -4.167vw;
-            background-image: url("../assets/images/arrow_white_right.png");
-
-            &:hover {
-                background-image: url("../assets/images/arrow_yellow_right.png");
-            }
-        }
-    }
-
-    .btn-arrow {
-        // margin-top: 50px;
-        margin-top: 2.604vw;
-        text-align: center;
     }
 
     .big_heading {
@@ -352,153 +276,326 @@
 }
 
 .block3 {
-    padding-top: 7.75vw;
-    height: 39.531vw;
+    // height: 61.510vw;
     position: relative;
     width: 100%;
-    background: url("../assets/images/bg_7.jpg");
+    background: url("../assets/images/bg_5.jpg");
     background-size: 100% 100%;
 
     @media (max-width: 767px) {
         height: auto;
-        padding-bottom: 7vw;
-        padding-top: 7vw;
-        background: linear-gradient(180deg, #dbdcde 0%, #ffffff 100%);
+        background-color: #fff;
+        background-image: none;
+        padding: 7vw 0;
+        padding-bottom: 0;
+        background: linear-gradient(180deg, #7f8488 0%, #c3c4c8 100%);
     }
 
     &__container {
-        margin: 0 auto;
-        // width: calc(100% - 300px);
-        width: calc(100% - 15.625vw);
-    }
-
-    .big_heading {
-        @include flexbox;
-        @include flex-direction(row);
-        @include align-items(flex-end);
-        max-width: 100%;
-        width: auto;
+        padding-left: 3.646vw;
+        padding-right: 7.969vw;
+        padding-top: 10.625vw;
 
         @media (max-width: 767px) {
-            @include flex-direction(column);
+            padding-left: 7vw;
+            padding-right: 7vw;
+            padding-top: 5vw;
         }
 
-        &__top {
-            width: 27.083vw;
-
-            @media (max-width: 767px) {
-                width: 100%;
-            }
-        }
-
-        span {
-            &:nth-child(1) {
-                padding-left: 0;
-            }
-        }
-
-        i {
-            margin-bottom: 0.26vw;
-            margin-left: 1.042vw;
-            // margin-bottom: 5px;
-            // margin-left: 20px;
-        }
     }
 
-    &__content {
+    .position {
         @include flexbox;
-        @include justify-content(flex-end);
-        @include flex-wrap(wrap);
-        // margin-left: 60px;
-        // margin-top: 30px;
-        margin-left: 3.125vw;
-        margin-top: 1.563vw;
+        margin-left: 2.760vw;
+        margin-top: 3.333vw;
+        width: calc(100% + 1.979vw);
 
         @media (max-width: 767px) {
-            margin-left: 0;
-            margin-top: 7vw;
+            @include flex-wrap(wrap);
         }
 
-        &--item {
-            // width: calc((100% / 3) - 80px);
-            // margin: 0 40px;
-            width: calc((100% / 3) - 4.167vw);
-            margin: 0 2.083vw;
-            text-align: right;
+        &.ult1 {
+            ul {
+                &:nth-child(3) {
+                    width: 30%;
+                }
+
+                &:nth-child(4) {
+                    width: 18%;
+                }
+            }
+        }
+
+        &.equal {
+            ul {
+                width: 25%;
+            }
+        }
+
+        ul {
+            // @include flex(1);
+            width: 25%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            margin-right: 1.5vw;
+            padding-right: 0.7vw;
 
             @media (max-width: 767px) {
-                width: 85%;
-                margin: 0 auto;
-                text-align: left;
-                margin-bottom: 5vw;
+                width: 100% !important;
             }
 
-            .title {
-                line-height: normal;
-                @include flexbox;
-                @include align-items(flex-end);
-                @include justify-content(space-between);
-            }
-
-            .no {
-                color: #bb9348;
-                font-family: $SVN-Gotham-Bold;
-                // margin-bottom: 20px;
-                // font-size: 40px;
-                margin-bottom: 1.042vw;
-                font-size: 2.083vw;
+            &::before {
+                position: absolute;
+                content: '';
+                right: 0;
+                width: 2.604vw;
+                height: 100%;
+                background-image: url(../assets/images/bg_ul.png);
+                background-repeat: no-repeat;
+                background-size: auto 100%;
 
                 @media (max-width: 767px) {
-                    font-size: 5vw;
+                    display: none;
                 }
             }
 
-            .percent {
-                color: #08315a;
-                font-family: $SVN-Gotham-Bold;
-                // font-size: 160px;
-                font-size: 8.333vw;
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                // @include flex(0.7);
 
-                @media (max-width: 767px) {
-                    font-size: 10vw;
+                &::before {
+                    display: none;
                 }
             }
 
-            .detail {
-                color: #08315a;
+            li {
+                font-size: 1.042vw;
                 font-family: $SVN-Gotham-Book;
-                line-height: normal;
-                // font-size: 25px;
-                font-size: 1.302vw;
+                color: #152850;
+                margin-bottom: 0.160vw;
 
                 @media (max-width: 767px) {
                     font-size: 3.5vw;
-                    text-align: justify;
                 }
+            }
+        }
+    }
+
+    .big_heading {
+        display: none;
+
+        @media (max-width: 767px) {
+            @include flexbox;
+            @include flex-direction(column);
+            width: 100%;
+
+            span,
+            i {
+                color: #fff;
+                text-align: center;
             }
         }
     }
 }
 
 .block4 {
-    height: 42.552vw;
+    padding-top: 5.292vw;
+    height: 88.021vw;
     position: relative;
     width: 100%;
-    background: url("../assets/images/block4_bg.jpg");
+    background: url("../assets/images/block5_bg.jpg");
     background-size: 100% 100%;
-    @include flex_center;
+}
+
+.block5 {
+    padding-top: 5.292vw;
+    height: 50.833vw;
+    position: relative;
+    width: 100%;
+    background: url("../assets/images/block6_bg.jpg");
+    background-size: 100% 100%;
+
+    @media (max-width: 767px) {
+        height: auto;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
 
     &__container {
-        max-width: 85%;
-        margin: 0 auto;
+        @include flexbox;
+        margin-right: 7.813vw;
+        margin-left: 5.208vw;
 
         @media (max-width: 767px) {
-            max-width: 100%;
+            @include flex-direction(column);
+            margin-right: 7.813vw;
+            margin-left: 7.813vw;
+        }
+    }
+
+    &__left {
+        @include flex(1);
+        margin-right: 3vw;
+        margin-top: 1.302vw;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &__right {
+        width: 45vw;
+
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-top: 4vw;
+        }
+    }
+
+    .big_heading {
+        text-align: right;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
+        * {
+            color: #fff;
+        }
+
+        &__top {
+            span {
+                font-size: 3.3vw;
+                padding-left: 0;
+                text-align: right;
+
+                @media (max-width: 767px) {
+                    font-size: 7.646vw;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .nav {
+        margin-top: 3.906vw;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        position: relative;
+        text-align: right;
+        margin: 0.052vw 0;
+
+        color: #1b305a;
+        font-size: 1.458vw;
+        z-index: 1;
+
+        @media (max-width: 767px) {
+            text-align: center;
+            font-size: 4vw;
+            padding: .3rem 1rem;
+        }
+
+        &.active {
+            color: #1b305a;
+        }
+
+        &.active,
+        &:hover {
+            background-color: transparent;
+
+            &::before {
+                position: absolute;
+                content: '';
+                z-index: -1;
+                height: 100%;
+                width: calc(100% + 10.416vw);
+                left: -5.208vw;
+                top: 50%;
+                @include transform(translateY(-50%));
+                background-color: #FFC114;
+
+                @media (max-width: 767px) {
+                    left: -7.813vw;
+                }
+
+            }
+
+        }
+    }
+
+    .tab-pane {
+        @media (max-width: 767px) {
+            text-align: center;
+            font-size: 3.5vw;
+        }
+    }
+
+    /* bootstrap hack: fix content width inside hidden tabs */
+    .tab-content>.tab-pane {
+        display: block;
+        /* undo display:none          */
+        height: 0;
+        /* height:0 is also invisible */
+        overflow-y: hidden;
+        /* no-overflow                */
+    }
+
+    .tab-content>.active {
+        height: auto;
+        /* let the content decide it  */
+    }
+
+    /* bootstrap hack end */
+
+    .slick-dots {
+        bottom: 0;
+        position: static;
+        margin-top: 0.781vw;
+
+        li {
+            width: auto;
+            height: auto;
+            margin: 0 0.260vw;
+
+            @media (max-width: 767px) {
+                margin: 0 0.6vw;
+            }
+
+            button {
+                border: 0.156vw solid #1b3079;
+                border-radius: 50%;
+                width: 1.042vw;
+                height: 1.042vw;
+                padding: 0.260vw;
+
+                @media (max-width: 767px) {
+                    width: 2.042vw;
+                    height: 2.042vw;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background-color: #1b3079;
+                }
+            }
         }
     }
 }
 
-.block5 {
+.block6 {
     font-family: $SVN-Gotham-Regular;
     color: #091829;
     background-color: #eaeaea;
@@ -647,547 +744,6 @@
 
         @media (max-width: 767px) {
             margin-top: 4vw;
-        }
-    }
-}
-
-.block6 {
-    padding-top: 5.292vw;
-    height: 50.833vw;
-    position: relative;
-    width: 100%;
-    background: url("../assets/images/bg_04.jpg");
-    background-size: 100% 100%;
-
-    @media (max-width: 767px) {
-        height: auto;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
-    }
-
-    &__container {
-        @include flexbox;
-        margin-right: 7.813vw;
-        margin-left: 5.208vw;
-
-        @media (max-width: 767px) {
-            @include flex-direction(column);
-            margin-right: 7.813vw;
-            margin-left: 7.813vw;
-        }
-    }
-
-    &__left {
-        @include flex(1);
-        margin-right: 3vw;
-        margin-top: 1.302vw;
-
-        @media (max-width: 767px) {
-            width: 100%;
-            margin-right: 0;
-        }
-    }
-
-    &__right {
-        width: 45vw;
-
-
-        @media (max-width: 767px) {
-            width: 100%;
-            margin-top: 4vw;
-        }
-    }
-
-    .big_heading {
-        text-align: right;
-        width: 100%;
-
-        @media (max-width: 767px) {
-            text-align: center;
-        }
-
-        * {
-            color: #fff;
-        }
-
-        &__top {
-            span {
-                font-size: 3.3vw;
-                padding-left: 0;
-                text-align: right;
-
-                @media (max-width: 767px) {
-                    font-size: 7.646vw;
-                    text-align: center;
-                }
-            }
-        }
-    }
-
-    .nav {
-        margin-top: 3.906vw;
-    }
-
-    .nav-link {
-        text-transform: uppercase;
-        position: relative;
-        text-align: right;
-        margin: 0.052vw 0;
-
-        color: #1b305a;
-        font-size: 1.458vw;
-        z-index: 1;
-
-        @media (max-width: 767px) {
-            text-align: center;
-            font-size: 4vw;
-            padding: .3rem 1rem;
-        }
-
-        &.active {
-            color: #1b305a;
-        }
-
-        &.active,
-        &:hover {
-            background-color: transparent;
-
-            &::before {
-                position: absolute;
-                content: '';
-                z-index: -1;
-                height: 100%;
-                width: calc(100% + 10.416vw);
-                left: -5.208vw;
-                top: 50%;
-                @include transform(translateY(-50%));
-                background-color: transparent;
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                background-position: left center;
-                background-image: url(../assets/images/bg_hover.png);
-
-                @media (max-width: 767px) {
-                    left: -7.813vw;
-                }
-
-            }
-
-        }
-    }
-
-    .tab-pane {
-        @media (max-width: 767px) {
-            text-align: center;
-            font-size: 3.5vw;
-        }
-    }
-
-    /* bootstrap hack: fix content width inside hidden tabs */
-    .tab-content>.tab-pane {
-        display: block;
-        /* undo display:none          */
-        height: 0;
-        /* height:0 is also invisible */
-        overflow-y: hidden;
-        /* no-overflow                */
-    }
-
-    .tab-content>.active {
-        height: auto;
-        /* let the content decide it  */
-    }
-
-    /* bootstrap hack end */
-
-    .slick-dots {
-        bottom: 0;
-        position: static;
-        margin-top: 0.781vw;
-
-        li {
-            width: auto;
-            height: auto;
-            margin: 0 0.260vw;
-
-            @media (max-width: 767px) {
-                margin: 0 0.6vw;
-            }
-
-            button {
-                border: 0.156vw solid #1b3079;
-                border-radius: 50%;
-                width: 1.042vw;
-                height: 1.042vw;
-                padding: 0.260vw;
-
-                @media (max-width: 767px) {
-                    width: 2.042vw;
-                    height: 2.042vw;
-                }
-
-                &::before {
-                    display: none;
-                }
-            }
-
-            &.slick-active {
-                button {
-                    background-color: #1b3079;
-                }
-            }
-        }
-    }
-}
-
-.block7 {
-    height: 61.510vw;
-    position: relative;
-    width: 100%;
-    background: url("../assets/images/bg_5.jpg");
-    background-size: 100% 100%;
-
-    @media (max-width: 767px) {
-        height: auto;
-        background-color: #fff;
-        background-image: none;
-        padding: 7vw 0;
-        padding-bottom: 0;
-        background: linear-gradient(180deg, #7f8488 0%, #c3c4c8 100%);
-    }
-
-    &__container {
-        padding-left: 3.646vw;
-        padding-right: 7.969vw;
-        padding-top: 10.625vw;
-
-        @media (max-width: 767px) {
-            padding-left: 7vw;
-            padding-right: 7vw;
-            padding-top: 5vw;
-        }
-
-    }
-
-    .nav {
-        @include justify-content(center);
-
-        .nav-link {
-            text-transform: uppercase;
-            font-size: 1.563vw;
-            color: #fff;
-            padding: 0.625vw 1.406vw;
-
-            @media (max-width: 767px) {
-                font-size: 3vw;
-                padding: 1.5vw 2.5vw;
-            }
-
-            &.active {
-                background-image: url(../assets/images/bg_tab_hover.png);
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-            }
-        }
-    }
-
-    .position {
-        @include flexbox;
-        margin-left: 2.760vw;
-        margin-top: 3.333vw;
-        width: calc(100% + 1.979vw);
-
-        @media (max-width: 767px) {
-            @include flex-wrap(wrap);
-        }
-
-        &.ult1 {
-            ul {
-                &:nth-child(3) {
-                    width: 30%;
-                }
-
-                &:nth-child(4) {
-                    width: 18%;
-                }
-            }
-        }
-
-        &.equal {
-            ul {
-                width: 25%;
-            }
-        }
-
-        ul {
-            // @include flex(1);
-            width: 25%;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            position: relative;
-            margin-right: 1.5vw;
-            padding-right: 0.7vw;
-
-            @media (max-width: 767px) {
-                width: 100% !important;
-            }
-
-            &::before {
-                position: absolute;
-                content: '';
-                right: 0;
-                width: 2.604vw;
-                height: 100%;
-                background-image: url(../assets/images/bg_ul.png);
-                background-repeat: no-repeat;
-                background-size: auto 100%;
-
-                @media (max-width: 767px) {
-                    display: none;
-                }
-            }
-
-            &:last-child {
-                margin-right: 0;
-                padding-right: 0;
-                // @include flex(0.7);
-
-                &::before {
-                    display: none;
-                }
-            }
-
-            li {
-                font-size: 1.042vw;
-                font-family: $SVN-Gotham-Book;
-                color: #152850;
-                margin-bottom: 0.160vw;
-
-                @media (max-width: 767px) {
-                    font-size: 3.5vw;
-                }
-            }
-        }
-    }
-
-    .big_heading {
-        display: none;
-
-        @media (max-width: 767px) {
-            @include flexbox;
-            @include flex-direction(column);
-            width: 100%;
-
-            span,
-            i {
-                color: #fff;
-                text-align: center;
-            }
-        }
-    }
-}
-
-.block8 {
-    // height: 57.813vw;
-    position: relative;
-    width: 100%;
-    background: url("../assets/images/bg_06.jpg");
-    background-size: 100% 100%;
-    padding-bottom: 2px;
-
-    @media (max-width: 767px) {
-        height: auto;
-        padding: 7vw 0;
-        background-size: 100% 100%;
-        background: url("../assets/images/bg_06_mb.jpg");
-    }
-
-    &__container {
-        margin-left: 10.938vw;
-        margin-right: 11.198vw;
-        padding-top: 7.292vw;
-
-        @media (max-width: 767px) {
-            width: 80vw;
-            margin: 0 auto;
-        }
-
-    }
-
-    .big_heading {
-        display: none;
-
-        @media (max-width: 767px) {
-            width: 100%;
-            margin-bottom: 7vw;
-            @include flexbox;
-            @include flex-direction(column);
-        }
-
-        span,
-        i {
-            @media (max-width: 767px) {
-                padding: 0;
-                text-align: center;
-            }
-        }
-    }
-
-    /* the slides */
-    .slick-slide {
-        margin: 0 1.042vw;
-    }
-
-    /* the parent */
-    .slick-list {
-        margin: 0 -1.042vw;
-    }
-
-    .slick-arrow {
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 5.7vw;
-        height: 5.7vw;
-        z-index: 1;
-        top: 17.833vw;
-
-        @media (max-width: 992px) {
-            top: 28vw;
-        }
-
-        @media (max-width: 767px) {
-            top: 30vw;
-        }
-
-
-        &::before {
-            display: none;
-        }
-    }
-
-    .slick-prev {
-        left: -7.319vw;
-        background-image: url("../assets/images/arrow_white_left.png");
-
-        &:hover {
-            background-image: url("../assets/images/arrow_yellow_left.png");
-        }
-    }
-
-    .slick-next {
-        right: -7.319vw;
-        background-image: url("../assets/images/arrow_white_right.png");
-
-        &:hover {
-            background-image: url("../assets/images/arrow_yellow_right.png");
-        }
-    }
-
-    .slick-dots {
-        bottom: 0;
-        position: static;
-        margin-top: 4.781vw;
-
-        li {
-            width: auto;
-            height: auto;
-            margin: 0 0.260vw;
-
-            @media (max-width: 767px) {
-                margin: 0 0.6vw;
-            }
-
-            button {
-                border: 0.156vw solid #1b3079;
-                border-radius: 50%;
-                width: 1.042vw;
-                height: 1.042vw;
-                padding: 0.260vw;
-
-                @media (max-width: 767px) {
-                    width: 2.042vw;
-                    height: 2.042vw;
-                }
-
-                &::before {
-                    display: none;
-                }
-            }
-
-            &.slick-active {
-                button {
-                    background-color: #1b3079;
-                }
-            }
-        }
-    }
-
-    .img {
-        border-radius: 0.521vw;
-        overflow: hidden;
-        position: relative;
-        cursor: pointer;
-
-        &::before {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 0;
-            opacity: 0.2;
-            left: 0;
-            top: 0;
-            background: radial-gradient(circle, #ffffff00 0%, #ffffff 100%);
-            @include transition(all 0.3s ease)
-        }
-
-        &:hover {
-            &::before {
-                height: 100%;
-            }
-        }
-    }
-
-    .text {
-        color: #08315a;
-        font-family: $SVN-Gotham-Book;
-        margin-top: 1.563vw;
-        font-size: 1.302vw;
-        line-height: normal;
-
-        @media (max-width: 767px) {
-            font-size: 3.5vw;
-            margin-top: 4vw;
-        }
-    }
-
-    .link {
-        margin-top: 1.563vw;
-
-        @media (max-width: 767px) {
-            margin-top: 3vw;
-        }
-
-        a {
-            color: #bb9348;
-            font-size: 1.302vw;
-            font-family: $SVN-Gotham-Light;
-
-            @media (max-width: 767px) {
-                font-size: 3.5vw;
-            }
-        }
-
-    }
-
-    &__slider {
-        opacity: 0;
-        visibility: hidden;
-        @include transition(opacity 1s ease);
-
-        &.slick-initialized {
-            visibility: visible;
-            opacity: 1;
         }
     }
 }
