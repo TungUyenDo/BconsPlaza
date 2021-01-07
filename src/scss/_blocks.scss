@@ -637,7 +637,13 @@
 
     }
 
+    &_mb_img {
+        display: none;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
 
     &__container {
         @include flexbox;

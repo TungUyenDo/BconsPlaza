@@ -5,13 +5,16 @@
 <div class="social">
     <figure class="btn_baogia" data-toggle="modal" data-target="#Popup">
         <span class="text">Đăng ký</span>
-        <img src="./assets/images/btn_baogia.png" alt="BConsPlaza">
+        <img class="origin" src="./assets/images/btn_baogia.png" alt="BConsPlaza">
+        <img class="hover" src="./assets/images/btn_baogia1.png" alt="BConsPlaza">
     </figure>
     <a href="#" class="social__item fb">
-        <img src="./assets/images/icon_fb.png" alt="BConsPlaza">
+        <img class="origin" src="./assets/images/icon_fb.png" alt="BConsPlaza">
+        <img class="hover" src="./assets/images/icon_fb1.png" alt="BConsPlaza">
     </a>
-    <a href="tel:0931222279" class="social__item phone">
-        <img src="./assets/images/icon_yt.png" alt="BConsPlaza">
+    <a href="tel:0931222279" class="social__item yt">
+        <img class="origin" src="./assets/images/icon_yt.png" alt="BConsPlaza">
+        <img class="hover" src="./assets/images/icon_yt1.png" alt="BConsPlaza">
     </a>
 </div>
 
@@ -88,7 +91,7 @@
                     <input class="block1__form-control block1Phone" name="phone" type="text"
                         placeholder="Số điện thoại">
                 </div>
-                <div class="block1__form-button text-center wow fadeInUp" data-wow-delay="1s">
+                <div class="block1__form-button text-center wow fadeInUp mt-4" data-wow-delay="1s">
                     <button class="btn-submit submit-form" type="submit" disabled="disabled">
                         Đăng ký
                     </button>
@@ -255,26 +258,26 @@
 
 {# block4 #}
 <section class="block4 csbh" id="csbh">
-    <div class="big_heading">
+    <div class="big_heading wow fadeInUp" data-wow-delay="0.1s">
         <figure class="img">
             <img src="./assets/images/block5_title.png" alt="chính sách bán hàng">
         </figure>
     </div>
     <div class="block4__container">
-        <div class="block4__item">
+        <div class="block4__item wow fadeInUp" data-wow-delay="0.2s">
             <div class="percent">12%</div>
             <div class="text">Chiết Khấu Mở Bán <br>
                 100% Khách hàng được nhận chiết khấu từ 7% đến 11% Năm
             </div>
         </div>
-        <div class="block4__item">
+        <div class="block4__item wow fadeInUp" data-wow-delay="0.3s">
             <div class="percent">0%</div>
             <div class="text">
                 Hỗ trợ LÃI SUẤT 0% cho khách hàng trong thời gian 24 THÁNG , đồng thời khách hàng không phải trả nợ gốc
                 trong thời gian giải ngân
             </div>
         </div>
-        <div class="block4__item">
+        <div class="block4__item wow fadeInUp" data-wow-delay="0.4s">
             <div class="percent">30%</div>
             <div class="text">
                 Hỗ trợ LÃI SUẤT 0% cho khách hàng trong thời gian 24 THÁNG , đồng thời khách hàng không phải trả nợ gốc
@@ -282,8 +285,8 @@
             </div>
         </div>
 
-        <div class="block4__button wow fadeInUp" data-wow-delay="1s">
-            <button class="btn-submit submit-form">
+        <div class="block4__button wow fadeIn">
+            <button class="btn-submit submit-form" data-toggle="modal" data-target="#Popup">
                 Đăng ký
             </button>
         </div>
@@ -399,6 +402,14 @@
                         <img src="./assets/images/popup.jpg" alt="ĐĂNG KÝ TẠI ĐÂY ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ">
                     </div>
                     <div class="popup__wrap right">
+                        <div class="popup__logo">
+                            <a href="#" class="logo-1 ">
+                                <img src="./assets/images/logo2.png" alt="BConsPlaza">
+                            </a>
+                            <a href="#" class="logo-2">
+                                <img src="./assets/images/block7_logo.png" alt="BConsPlaza">
+                            </a>
+                        </div>
                         <div class="popup__title">
                             ĐĂNG KÝ TẠI ĐÂY<br> ĐỂ NHẬN TƯ VẤN VÀ BÁO GIÁ
                         </div>
@@ -415,10 +426,6 @@
                                 <div class="popup__form-group">
                                     <input class="popup__form-control PopupPhone" name="phone" type="text"
                                         placeholder="Số điện thoại">
-                                </div>
-                                <div class="popup__form-group">
-                                    <input class="popup__form-control PopupNote" name="note" type="text"
-                                        placeholder="Ghi chú nhu cầu">
                                 </div>
                                 <div class="popup__button text-center mt-4">
                                     <button class="btn-submit submit-form" type="submit" disabled="disabled">
