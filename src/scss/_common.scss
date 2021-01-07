@@ -326,6 +326,8 @@ button {
         background-position: center center;
         background-size: cover;
         background-image: url("../assets/images/social_bg.png");
+        position: relative;
+        overflow: hidden;
 
         @media (max-width: 767px) {
             width: 10vw;
@@ -333,6 +335,25 @@ button {
             margin: 0;
             border: 1px solid #fff;
             margin-left: 2vw;
+        }
+
+        &::before {
+            @include transform(rotate(15deg) translateY(-50%));
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.44021358543417366) 0%,
+                    rgba(255, 255, 255, 1) 100%);
+            content: "";
+            height: 130%;
+            left: -154%;
+            opacity: 0.2;
+            position: absolute;
+            top: 50%;
+            width: 2.396vw;
+            z-index: 1;
+
+            animation: LightRun 2s infinite;
+            @include transition(all 0.2s ease);
+
         }
 
         &:hover {
@@ -354,9 +375,8 @@ button {
         }
 
         img {
+            animation: LightRun 2s infinite;
             @include transition(all 0.2s ease);
-            // width: 2vw;
-            animation: zoomInOut 0.7s infinite;
 
             // @media (max-width: 767px) {
             //     width: 4.7vw;
@@ -375,15 +395,10 @@ button {
     }
 
     .fb {
-        @media (max-width: 767px) {
-            display: none;
-        }
+        @media (max-width: 767px) {}
 
         img {
-            // width: 1.302vw;
-            animation: zoomInOut 0.7s infinite;
 
-            @include transition(all 0.2s ease);
 
             // @media (max-width: 767px) {
             //     width: 3.302vw;
@@ -416,11 +431,12 @@ button {
             font-size: 5vw;
             color: #fff;
             text-align: center;
-            background: #dcb073;
+            background: #ffc313;
             border: 1px solid #fff;
             text-transform: uppercase;
             height: 100%;
             margin: 0;
+            flex: 1;
         }
 
         img {
@@ -532,20 +548,14 @@ button {
     background-repeat: no-repeat;
     background-position-x: -1px;
     background-position-y: -1px;
-    color: #071421;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: transparent;
-    padding: 0;
-    border: none;
-    font-weight: bold;
-    border-radius: 0.521vw;
     height: 3.385vw;
     width: 18.229vw;
     font-size: 1.563vw;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
 
     @media (max-width: 767px) {
-        font-size: 4.5vw;
         height: 9vw;
         width: 39vw;
     }
@@ -909,13 +919,14 @@ button {
         transition: all 0.3s ease;
 
         @media (max-width: 767px) {
-            width: 70%;
+            width: 75%;
             height: 100% !important;
             background: #121d25d1;
             top: 13vw;
             padding: 8vw;
             @include flexbox;
             @include flex-direction(column);
+            z-index: 3;
         }
 
         &.active {
