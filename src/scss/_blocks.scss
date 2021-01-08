@@ -744,8 +744,8 @@
                 content: '';
                 z-index: -1;
                 height: 100%;
-                width: calc(100% + 6vw);
-                left: -6vw;
+                width: calc(100% + 11vw);
+                left: -11vw;
                 top: 50%;
                 @include transform(translateY(-50%));
                 background-color: #FFC114;
