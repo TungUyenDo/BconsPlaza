@@ -423,6 +423,8 @@ button {
     }
 
     .yt {
+        margin: 0;
+
         .hover {
             display: none;
         }
@@ -439,19 +441,31 @@ button {
     }
 
     .fb {
+        height: 5.5vw;
+        background-image: none;
+        border: none !important;
+
+        @media (max-width: 767px) {
+            height: auto;
+        }
+
         .hover {
             display: none;
         }
 
         &:hover {
-            .hover {
-                display: block;
-            }
-
-            .origin {
-                display: none;
-            }
+            background-color: transparent;
         }
+
+        // &:hover {
+        //     .hover {
+        //         display: block;
+        //     }
+
+        //     .origin {
+        //         display: none;
+        //     }
+        // }
     }
 
     .btn_baogia {
@@ -460,8 +474,6 @@ button {
         margin: 0 auto;
         margin-bottom: 0.8vw;
         cursor: pointer;
-        //background-color: red;
-        border-radius: 1.042vw;
         position: relative;
         overflow: hidden;
 
@@ -631,6 +643,21 @@ button {
 
     &:hover {
         background-image: url("../assets/images/btn_register1.png");
+    }
+}
+
+.btn-submit-price {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../assets/images/btn_bg.png");
+    width: 18.385vw;
+    height: 3.385vw;
+    text-align: center;
+    color: #fff;
+    font-size: 1.354vw;
+
+    @media (max-width: 767px) {
+        font-size: 20px;
     }
 }
 

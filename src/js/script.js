@@ -39,7 +39,7 @@ var MainScript = (function () {
             maxLength: 10,
         }, {
             name: '.PopupEmail',
-            validators: ['required']
+            validators: []
         }, {
             name: '.PopupNote',
             validators: []
@@ -59,7 +59,7 @@ var MainScript = (function () {
             maxLength: 10,
         }, {
             name: '.block1Email',
-            validators: ['required']
+            validators: []
         }, {
             name: '.block1Note',
             validators: []
@@ -79,7 +79,7 @@ var MainScript = (function () {
             maxLength: 10,
         }, {
             name: '.block6Email',
-            validators: ['required']
+            validators: []
         }];
         var $submit = '.block6__button button';
         validateForm($submit, form);
