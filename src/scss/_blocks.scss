@@ -681,6 +681,7 @@
     background: url("../assets/images/block6_bg.jpg");
     background-size: 100% 100%;
     padding-bottom: 5vw;
+    padding-top: 5vw;
 
     @media (max-width: 767px) {
         height: auto;
@@ -701,30 +702,33 @@
         @include flexbox;
 
         @media(max-width:1199px) {
-            margin-left: 4vw;
+            // margin-left: 4vw;
         }
 
         @media (max-width: 767px) {
             @include flex-direction(column);
+            @include align-items(center);
             margin-right: 0 7.813vw;
         }
     }
 
     &__left {
-        width: 30vw;
-        @include transform(translateX(5vw));
+        width: 35vw;
+        // @include transform(translateX(5vw));
         @include flex(1);
         @include flexbox;
         @include flex-direction(column);
         @include justify-content(center);
+        margin-right: 2vw;
 
         @media (max-width: 767px) {
             width: 80%;
+            margin-right: 0;
         }
     }
 
     &__right {
-        width: 70vw;
+        width: 62vw;
 
         @media (max-width: 767px) {
             width: 100%;
@@ -737,6 +741,7 @@
     .big_heading {
         text-align: right;
         width: 100%;
+        padding-left: 5vw;
 
         @media (max-width: 767px) {
             text-align: center;
