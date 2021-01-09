@@ -423,8 +423,6 @@ button {
     }
 
     .yt {
-        margin: 0;
-
         .hover {
             display: none;
         }
@@ -441,31 +439,19 @@ button {
     }
 
     .fb {
-        height: 5.5vw;
-        background-image: none;
-        border: none !important;
-
-        @media (max-width: 767px) {
-            height: auto;
-        }
-
         .hover {
             display: none;
         }
 
         &:hover {
-            background-color: transparent;
+            .hover {
+                display: block;
+            }
+
+            .origin {
+                display: none;
+            }
         }
-
-        // &:hover {
-        //     .hover {
-        //         display: block;
-        //     }
-
-        //     .origin {
-        //         display: none;
-        //     }
-        // }
     }
 
     .btn_baogia {
@@ -488,6 +474,7 @@ button {
 
         @media (max-width: 767px) {
             @include flex_center;
+            @include flex(1);
             width: calc(100% - 10vw);
             font-size: 5vw;
             color: #fff;
@@ -497,7 +484,7 @@ button {
             text-transform: uppercase;
             height: 100%;
             margin: 0;
-            flex: 1;
+            border-radius: 7px;
         }
 
         img {

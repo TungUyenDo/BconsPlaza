@@ -23,12 +23,6 @@ var MainScript = (function () {
     var _resize = function () { }
 
     this.PopupValidateForm = function () {
-        $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
-            $(".block5__slider").slick("resize");
-        })
-    }
-
-    this.PopupValidateForm = function () {
         var form = [{
             name: '.PopupName',
             validators: ['required']
