@@ -7,8 +7,18 @@ $SVN-Gotham-Book: "SVN-Gotham-Book";
 
 $UTMGod_sWordBold: "UTMGod_sWordBold";
 $UTMGod_sWordR: "UTMGod_sWordR";
+$UTMBell: "UTMBell";
 
 ///=====================================================================================================
+@font-face {
+    font-family: "UTMBell";
+    src: url("../assets/fonts/UTMBell/UTMBell.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/UTMBell/UTMBell.woff") format("woff"),
+        url("../assets/fonts/UTMBell/UTMBell.ttf") format("truetype"),
+        url("../assets/fonts/UTMBell/UTMBell.svg#UTMBell") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 // SVN-Gotham
 @font-face {

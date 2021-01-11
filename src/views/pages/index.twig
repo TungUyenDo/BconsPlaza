@@ -73,7 +73,7 @@
     </figure>
     <div class="block1__container">
         <figure class="block1__heading wow fadeInDown">
-            <img src="./assets/images/logo.png" alt="block 1 heading">
+           {% include 'logo_svg.html' %}
         </figure>
         <form class="form" action="">
             <div class="block1__title wow fadeIn">
@@ -222,12 +222,13 @@
 <section class="block3 ults" id="ults">
     <div class="big_heading__top wow fadeIn">
         <figure class="img">
-            <img src="./assets/images/block4_title.png" alt="tiện ích">
+            <img src="./assets/images/block4_title_update.png" alt="tiện ích">
         </figure>
     </div>
     <div class="block3__container">
         <figure class="img wow fadeIn">
-            <img src="./assets/images/block4_img.png" alt="tiện ích nội khu">
+            <img class="d-md-block d-none" src="./assets/images/block4_img.png" alt="tiện ích nội khu">
+            <img class="d-md-none d-block" src="./assets/images/tiencich-mobile.png" alt="tiện ích nội khu">
         </figure>
         <div class="position ult1">
             <ul class="wow fadeInUp">
@@ -273,8 +274,8 @@
 
 {# block4 #}
 <section class="block4 csbh" id="csbh">
-    <div class="big_heading wow fadeInUp" data-wow-delay="0.1s">
-        <figure class="img">
+    <div class="big_heading">
+        <figure class="img wow fadeInUp" data-wow-delay="0.1s">
             <img src="./assets/images/block5_title.png" alt="chính sách bán hàng">
         </figure>
     </div>
@@ -362,7 +363,7 @@
                     <img src="./assets/images/logo2.png" alt="BConsPlaza">
                 </a>
                 <a href="#" class="logo-2">
-                    <img src="./assets/images/block7_logo.png" alt="BConsPlaza">
+                    {% include 'logo_svg.html' %}
                 </a>
             </div>
 

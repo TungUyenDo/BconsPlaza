@@ -39,6 +39,12 @@ button {
     padding: 0 !important;
 }
 
+.main_wapper {
+    @media (max-width: 767px) {
+        overflow: hidden;
+    }
+}
+
 .popup {
     .modal-dialog {
         width: 65.885vw;
@@ -1177,4 +1183,8 @@ button {
             }
         }
     }
+}
+
+.cls-1 {
+    font-family: $UTMBell !important;
 }
