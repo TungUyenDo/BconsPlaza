@@ -15,6 +15,7 @@ var MainScript = (function () {
         self.Block1ValidateForm();
         self.Block6ValidateForm();
         self.Block2Slider();
+        self.Block2RightSlider();
         self.Block8Slider();
         self.Block5Slider();
         self.Menu();
@@ -79,6 +80,21 @@ var MainScript = (function () {
         validateForm($submit, form);
     }
 
+    this.Block2RightSlider = function () {
+        if ($(".block2__right-slider").length === 0) {
+            return false
+        }
+
+        $(".block2__right-slider").slick({
+            arrows: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    }
+
     this.Block2Slider = function () {
         if ($(".block2__slider").length === 0) {
             return false
@@ -87,7 +103,7 @@ var MainScript = (function () {
         $(".block2__slider").slick({
             arrows: true,
             dots: false,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000
         });
     }
